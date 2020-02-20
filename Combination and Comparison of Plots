@@ -1,0 +1,5 @@
+After the solution has been achieved through function and simulink, the values are stored in the workspace.
+Two new matrices are created in the workspace with the name ans and out.
+These correspond to time and position values from function and simulink respectively.
+The following MATLAB command can be given for plotting time and position from both methods on the same plot for comparison:
+plot(out.simu(:,1),out.simu(:,2),'r',ans(:,1),ans(:,2),'b:','linewidth',2)
